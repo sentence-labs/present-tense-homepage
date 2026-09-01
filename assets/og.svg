@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#fdfdfc"/>
-  <rect x="28" y="28" width="1144" height="574" fill="none" stroke="#111111" stroke-width="2"/>
-  <rect x="44" y="44" width="1112" height="542" fill="none" stroke="#dddddd" stroke-width="1"/>
-  <text x="600" y="308" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="96" font-weight="600" fill="#111111" letter-spacing="-2">Present Tense</text>
-  <rect x="975" y="228" width="10" height="76" fill="#111111"/>
-  <text x="600" y="382" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="30" fill="#666666">your screen, as text and structure — not video</text>
-  <text x="600" y="520" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#666666" letter-spacing="4">COMING SOON</text>
+  <rect width="1200" height="630" fill="#0B0B0C"/>
+  <g fill="#F4F2EA">
+    <circle cx="600" cy="192" r="14"/>
+    <circle cx="600" cy="240" r="14"/>
+  </g>
+  <text x="600" y="356" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="88" font-weight="700" fill="#F4F2EA" letter-spacing="-1">Present Tense</text>
+  <text x="600" y="424" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="28" fill="#8B8B85">your live screen as shared, structured state</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Inter, Helvetica, sans-serif" font-size="20" fill="#585854" letter-spacing="6">COMING SOON</text>
 </svg>

@@ -1,0 +1,99 @@
+---
+const title = 'Page not found: Present Tense';
+const description = 'This page does not exist. Head back to Present Tense, a live presentation surface from Sentence Labs, coming soon.';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+<div class="center">
+  <div class="mark">
+    <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="currentColor">
+        <circle cx="32" cy="23" r="6"/>
+        <circle cx="32" cy="41" r="6"/>
+      </g>
+    </svg>
+  </div>
+
+  <h1>404</h1>
+
+  <p class="description">This page could not be found. The live source is still where you left it.</p>
+
+  <p class="contact"><a href="/">Back to Present Tense</a></p>
+</div>
+
+</body>
+</html>
+
+<style>
+  :root{
+    --bg: #0B0B0C;
+    --offwhite: #F4F2EA;
+    --muted: #8B8B85;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin: 0;
+    height: 100%;
+    background: var(--bg);
+  }
+
+  body{
+    font-family: "Inter", -apple-system, sans-serif;
+    color: var(--offwhite);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover{ color: var(--offwhite); }
+
+  *:focus-visible{
+    outline: 2px solid var(--offwhite);
+    outline-offset: 3px;
+  }
+
+  .center{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .mark{ margin: 0 0 24px; color: var(--offwhite); }
+  .mark svg{ display: block; margin: 0 auto; }
+
+  h1{
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+  }
+
+  .description{
+    width: 100%;
+    max-width: 420px;
+    font-size: 1.02rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+
+  .contact{ font-size: 1rem; }
+</style>

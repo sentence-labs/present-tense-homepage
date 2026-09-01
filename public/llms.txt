@@ -1,0 +1,11 @@
+# Present Tense
+
+> Present Tense turns your live screen into shared, structured state: crisp text on every device, resilient on bad wifi. A live presentation surface by Sentence Labs, coming soon.
+
+Present Tense sends your screen as text and structure rather than video, so every attendee's device renders a sharp, native view even on poor venue wifi.
+
+## Links
+
+- [Home](https://present-tense.io/): product overview and contact
+- [Sentence Labs](https://sentence-labs.com): parent company, an applied research lab building infrastructure for real-time, structured interaction
+- [Contact](mailto:hi@sentence-labs.com): questions, feedback, and early access

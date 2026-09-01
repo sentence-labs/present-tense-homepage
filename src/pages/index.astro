@@ -3,29 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Present Tense — coming soon</title>
-  <meta name="description" content="Present Tense sends your screen as text and structure, not video — sharp on any device, and it keeps up even on the venue wifi. From Sentence Labs.">
+  <title>Present Tense: coming soon</title>
+  <meta name="description" content="Present Tense turns your live screen into shared, structured state: crisp text on every device, resilient on bad wifi. From Sentence Labs.">
   <meta name="author" content="Sentence Labs">
   <link rel="canonical" href="https://present-tense.io/">
-  <meta name="theme-color" content="#fdfdfc">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b0c">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
   <meta property="og:site_name" content="Present Tense">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:title" content="Present Tense — coming soon">
-  <meta property="og:description" content="Present Tense sends your screen as text and structure, not video — sharp on any device, and it keeps up even on the venue wifi. From Sentence Labs.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Present Tense: coming soon">
+  <meta property="og:description" content="Present Tense turns your live screen into shared, structured state: crisp text on every device, resilient on bad wifi. From Sentence Labs.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://present-tense.io/">
   <meta property="og:image" content="https://present-tense.io/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Present Tense — your screen, as text and structure, not video. Coming soon.">
-
+  <meta property="og:image:alt" content="Present Tense: your live screen as shared, structured state. Coming soon.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Present Tense — coming soon">
-  <meta name="twitter:description" content="Present Tense sends your screen as text and structure, not video — sharp on any device, and it keeps up even on the venue wifi. From Sentence Labs.">
+  <meta name="twitter:title" content="Present Tense: coming soon">
+  <meta name="twitter:description" content="Present Tense turns your live screen into shared, structured state: crisp text on every device, resilient on bad wifi. From Sentence Labs.">
   <meta name="twitter:image" content="https://present-tense.io/assets/og.png">
 
   <script is:inline type="application/ld+json">
@@ -34,332 +38,241 @@
       "@type": "WebSite",
       "name": "Present Tense",
       "url": "https://present-tense.io",
-      "description": "Present Tense sends your screen as text and structure, not video — sharp on any device, and it keeps up even on the venue wifi.",
+      "description": "Present Tense turns your live screen into shared, structured state: crisp text on every device, resilient on bad wifi.",
       "publisher": {
         "@type": "Organization",
         "name": "Sentence Labs",
         "url": "https://sentence-labs.com",
+        "logo": "https://present-tense.io/assets/logo.svg",
         "email": "hi@sentence-labs.com"
       }
     }
   </script>
 </head>
 <body>
-  <div class="wrap">
 
-    <p class="mark">Present Tense</p>
-
-    <h1>A live presentation surface, from Sentence Labs.</h1>
-    <p class="tagline">Present Tense sends your screen as text and structure, not video — so it stays sharp on any device, and it keeps up even when the venue wifi doesn't.</p>
-
-    <div class="demo" aria-hidden="true">
-      <div class="frame laptop">
-        <div class="frame-label">here</div>
-        <div class="frame-content"><span id="hereText"></span><span class="cursor">|</span></div>
-      </div>
-      <div class="sync-line"></div>
-      <div class="frame phone">
-        <div class="frame-label">there</div>
-        <div class="frame-content"><span id="thereText"></span></div>
-      </div>
-    </div>
-    <p class="demo-caption">what you type here appears there, as text, not a video frame</p>
-
-    <p class="status">Coming soon.</p>
-
-    <form id="notifyForm">
-      <label for="email" class="visually-hidden">Email address</label>
-      <input type="email" id="email" placeholder="you@company.com" required>
-      <button type="submit">Notify me</button>
-    </form>
-    <p class="note" id="signupNote">Or write to <a href="mailto:hi@sentence-labs.com">hi@sentence-labs.com</a>.</p>
-
-    <footer>
-      <p>Sentence Labs Private Limited · <a href="https://sentence-labs.com">sentence-labs.com</a> · © 2026</p>
-    </footer>
-
+<div class="center">
+  <div class="mark">
+    <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="currentColor">
+        <circle cx="32" cy="23" r="6"/>
+        <circle cx="32" cy="41" r="6"/>
+      </g>
+    </svg>
   </div>
+
+  <h1 id="headline" aria-label="Present Tense">Present Tense</h1>
+
+  <p class="description">A live presentation surface, from Sentence Labs, turning your screen into shared, structured state that stays sharp on every device.</p>
+
+  <div class="diagram-wrap">
+    <svg width="200" height="140" viewBox="0 0 200 140" aria-hidden="true">
+      <line class="path-line" x1="100" y1="18" x2="34" y2="118"/>
+      <line class="path-line" x1="100" y1="18" x2="100" y2="128"/>
+      <line class="path-line" x1="100" y1="18" x2="166" y2="118"/>
+
+      <circle cx="34" cy="118" r="4" fill="none" stroke="#8B8B85" stroke-width="1.2"/>
+      <circle cx="100" cy="128" r="4" fill="none" stroke="#8B8B85" stroke-width="1.2"/>
+      <circle cx="166" cy="118" r="4" fill="none" stroke="#8B8B85" stroke-width="1.2"/>
+
+      <circle class="flash flash-1" cx="34" cy="118" r="4" fill="#F4F2EA"/>
+      <circle class="flash flash-2" cx="100" cy="128" r="4" fill="#F4F2EA"/>
+      <circle class="flash flash-3" cx="166" cy="118" r="4" fill="#F4F2EA"/>
+
+      <circle class="pulse pulse-1" cx="100" cy="18" r="3" fill="#F4F2EA"/>
+      <circle class="pulse pulse-2" cx="100" cy="18" r="3" fill="#F4F2EA"/>
+      <circle class="pulse pulse-3" cx="100" cy="18" r="3" fill="#F4F2EA"/>
+
+      <circle cx="100" cy="18" r="5" fill="#F4F2EA"/>
+    </svg>
+  </div>
+  <p class="diagram-caption">One live source. Every screen resolves it locally.</p>
+
+  <p class="status">Coming soon.</p>
+  <p class="contact"><a href="mailto:hi@sentence-labs.com">hi@sentence-labs.com</a></p>
+</div>
+
+<footer>
+  <p>Sentence Labs Private Limited · © 2026</p>
+</footer>
+
+<script is:inline>
+  (function(){
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var el = document.getElementById('headline');
+    var finalText = "Present Tense";
+
+    if (reduceMotion) {
+      el.textContent = finalText;
+      return;
+    }
+
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var revealed = 0;
+
+    var id = setInterval(function(){
+      var out = "";
+      for (var i = 0; i < finalText.length; i++) {
+        if (finalText[i] === " ") { out += " "; continue; }
+        if (i < revealed) { out += finalText[i]; }
+        else { out += chars[Math.floor(Math.random() * chars.length)]; }
+      }
+      el.textContent = out;
+
+      revealed += 0.6;
+      if (revealed >= finalText.length) {
+        el.textContent = finalText;
+        clearInterval(id);
+      }
+    }, 35);
+  })();
+</script>
 </body>
 </html>
 
 <style>
   :root{
-    --ink: #111111;
-    --muted: #666666;
-    --line: #dddddd;
-    --paper: #fdfdfc;
-    --max: 620px;
+    --bg: #0B0B0C;
+    --offwhite: #F4F2EA;
+    --muted: #8B8B85;
+    --line: #302F2C;
+    --footer-muted: #58585480;
   }
 
   *{ box-sizing: border-box; }
 
-  .visually-hidden{
-    position: absolute;
-    width: 1px; height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
+  html, body{
+    margin: 0;
+    height: 100%;
+    background: var(--bg);
   }
 
   body{
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.65;
+    font-family: "Inter", -apple-system, sans-serif;
+    color: var(--offwhite);
     -webkit-font-smoothing: antialiased;
   }
 
-  a{ color: var(--ink); }
-  a:hover{ color: var(--muted); }
+  a{ color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+  a:hover{ color: var(--offwhite); }
 
   *:focus-visible{
-    outline: 2px solid var(--ink);
+    outline: 2px solid var(--offwhite);
     outline-offset: 3px;
   }
 
-  .wrap{
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 88px 24px 56px;
+  .center{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 24px 100px;
+  }
+
+  .mark{ margin: 0 0 24px; color: var(--offwhite); }
+  .mark svg{ display: block; margin: 0 auto; }
+
+  h1{
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    min-height: 1.2em;
+    font-variant-ligatures: none;
+  }
+
+  .description{
+    width: 100%;
+    font-size: 1.02rem;
+    font-weight: 400;
+    color: var(--muted);
+    max-width: 420px;
+    line-height: 1.6;
+    margin: 0 0 8px;
+  }
+
+  /* -- diagram: one source, several receivers resolving -- */
+
+  .diagram-wrap{ margin: 30px 0 14px; }
+
+  .path-line{
+    stroke: var(--line);
+    stroke-width: 1;
+    stroke-dasharray: 2 4;
+  }
+
+  .flash{ opacity: 0; }
+  .pulse{ opacity: 0; }
+
+  @keyframes flashPulse{
+    0%, 42% { opacity: 0; }
+    46% { opacity: 1; }
+    56% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes travel1{
+    0% { transform: translate(0px, 0px); opacity: 0; }
+    6% { opacity: 1; }
+    46% { transform: translate(-66px, 100px); opacity: 1; }
+    50%, 100% { transform: translate(-66px, 100px); opacity: 0; }
+  }
+  @keyframes travel2{
+    0% { transform: translate(0px, 0px); opacity: 0; }
+    6% { opacity: 1; }
+    46% { transform: translate(0px, 110px); opacity: 1; }
+    50%, 100% { transform: translate(0px, 110px); opacity: 0; }
+  }
+  @keyframes travel3{
+    0% { transform: translate(0px, 0px); opacity: 0; }
+    6% { opacity: 1; }
+    46% { transform: translate(66px, 100px); opacity: 1; }
+    50%, 100% { transform: translate(66px, 100px); opacity: 0; }
+  }
+
+  .pulse-1{ animation: travel1 2.4s linear infinite; }
+  .pulse-2{ animation: travel2 2.4s linear infinite; }
+  .pulse-3{ animation: travel3 2.4s linear infinite; }
+
+  .flash-1{ animation: flashPulse 2.4s linear infinite; }
+  .flash-2{ animation: flashPulse 2.4s linear infinite; }
+  .flash-3{ animation: flashPulse 2.4s linear infinite; }
+
+  @media (prefers-reduced-motion: reduce){
+    .pulse{ animation: none !important; opacity: 0 !important; }
+    .flash{ animation: none !important; opacity: 1 !important; }
+  }
+
+  .diagram-caption{
+    font-size: 0.85rem;
+    color: var(--muted);
+    max-width: 320px;
+    width: 100%;
+    margin: 4px 0 30px;
+  }
+
+  .status{
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+
+  .contact{ font-size: 1rem; }
+
+  footer{
+    position: fixed;
+    left: 0; right: 0; bottom: 26px;
     text-align: center;
   }
 
-  .mark{
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    margin: 0 0 40px;
-  }
-
-  h1{
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 1.35;
-    margin: 0 0 20px;
-  }
-
-  .tagline{
-    font-size: 1.02rem;
-    color: var(--muted);
-    margin: 0 0 48px;
-  }
-
-  /* -- demo -- */
-
-  .demo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    margin: 0 0 14px;
-  }
-
-  .frame{
-    background: #fff;
-    border: 1px solid var(--ink);
-    text-align: left;
-  }
-
-  .frame-label{
-    font-size: 0.72rem;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
-
-  .frame-content{
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.82rem;
-    min-height: 1.3em;
-    white-space: nowrap;
-  }
-
-  .frame.laptop{
-    width: 220px;
-    padding: 16px 18px;
-  }
-
-  .frame.phone{
-    width: 120px;
-    border-radius: 14px;
-    padding: 18px 12px;
-  }
-
-  .cursor{
-    display: inline-block;
-    animation: blink 1s steps(2) infinite;
-  }
-
-  .sync-line{
-    width: 30px;
-    height: 1px;
-    border-top: 1px dashed var(--muted);
-  }
-
-  @keyframes blink{
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
-  }
-
-  .demo-caption{
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin: 0 0 56px;
-  }
-
-  /* -- status + form -- */
-
-  .status{
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin: 0 0 20px;
-  }
-
-  #notifyForm{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin: 0 0 16px;
-  }
-
-  #email{
-    flex: 1 1 220px;
-    max-width: 260px;
-    padding: 10px 12px;
-    font-size: 0.92rem;
-    font-family: inherit;
-    border: 1px solid var(--ink);
-    border-radius: 0;
-    background: #fff;
-    color: var(--ink);
-  }
-
-  #email::placeholder{ color: #a8a8a8; }
-
-  button[type="submit"]{
-    padding: 10px 18px;
-    font-size: 0.92rem;
-    font-family: inherit;
-    background: var(--ink);
-    color: var(--paper);
-    border: 1px solid var(--ink);
-    border-radius: 0;
-    cursor: pointer;
-  }
-
-  button[type="submit"]:hover{
-    background: var(--muted);
-    border-color: var(--muted);
-  }
-
-  .note{
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin: 0 0 64px;
-  }
-
-  footer{
-    border-top: 1px solid var(--line);
-    padding-top: 24px;
-  }
-
-  footer p{
-    font-size: 0.82rem;
-    color: var(--muted);
-    margin: 0;
-  }
+  footer p{ font-size: 0.8rem; color: var(--footer-muted); margin: 0; }
+  footer a{ color: inherit; text-decoration: none; }
+  footer a:hover{ color: var(--muted); }
 
   @media (max-width: 480px){
-    .wrap{ padding-top: 64px; }
-    .demo{ gap: 10px; }
-    .frame.laptop{ width: 160px; padding: 12px 14px; }
-    .frame.phone{ width: 90px; padding: 14px 8px; }
-    .frame-content{ font-size: 0.72rem; }
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    .cursor{ animation: none; }
+    h1{ font-size: 1.7rem; }
+    .description{ font-size: 0.95rem; }
   }
 </style>
-
-<script is:inline>
-  (function(){
-    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var hereEl = document.getElementById('hereText');
-    var thereEl = document.getElementById('thereText');
-    var phrases = [
-      "Q3 roadmap, page 4",
-      "next slide, please",
-      "any questions so far?"
-    ];
-
-    if (reduceMotion) {
-      hereEl.textContent = phrases[0];
-      thereEl.textContent = phrases[0];
-    } else {
-      var lag = 260;
-
-      function sleep(ms){
-        return new Promise(function(resolve){ setTimeout(resolve, ms); });
-      }
-
-      function typePhrase(phrase){
-        return new Promise(function(resolve){
-          var i = 0;
-          function step(){
-            if (i <= phrase.length) {
-              var slice = phrase.slice(0, i);
-              hereEl.textContent = slice;
-              setTimeout(function(){ thereEl.textContent = slice; }, lag);
-              i++;
-              setTimeout(step, 55);
-            } else {
-              resolve();
-            }
-          }
-          step();
-        });
-      }
-
-      function erase(){
-        return new Promise(function(resolve){
-          function step(){
-            var cur = hereEl.textContent;
-            if (cur.length > 0) {
-              hereEl.textContent = cur.slice(0, -1);
-              thereEl.textContent = cur.slice(0, -1);
-              setTimeout(step, 20);
-            } else {
-              resolve();
-            }
-          }
-          step();
-        });
-      }
-
-      (async function loop(){
-        while (true) {
-          for (var j = 0; j < phrases.length; j++) {
-            await typePhrase(phrases[j]);
-            await sleep(1300);
-            await erase();
-            await sleep(300);
-          }
-        }
-      })();
-    }
-
-    document.getElementById('notifyForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      var email = document.getElementById('email').value.trim();
-      var subject = encodeURIComponent('Notify me about Present Tense');
-      var body = encodeURIComponent(
-        'Please notify me when Present Tense launches.\n\nMy email: ' + email
-      );
-      window.location.href = 'mailto:hi@sentence-labs.com?subject=' + subject + '&body=' + body;
-      document.getElementById('signupNote').textContent =
-        "Opening your email app — send it and we'll be in touch.";
-    });
-  })();
-</script>
