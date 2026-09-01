@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Tense — coming soon</title>
+  <meta name="description" content="Present Tense sends your screen as text and structure, not video — sharp on any device, and it keeps up even on the venue wifi. From Sentence Labs.">
+</head>
+<body>
+  <div class="wrap">
+
+    <p class="mark">Present Tense</p>
+
+    <h1>A live presentation surface, from Sentence Labs.</h1>
+    <p class="tagline">Present Tense sends your screen as text and structure, not video — so it stays sharp on any device, and it keeps up even when the venue wifi doesn't.</p>
+
+    <div class="demo" aria-hidden="true">
+      <div class="frame laptop">
+        <div class="frame-label">here</div>
+        <div class="frame-content"><span id="hereText"></span><span class="cursor">|</span></div>
+      </div>
+      <div class="sync-line"></div>
+      <div class="frame phone">
+        <div class="frame-label">there</div>
+        <div class="frame-content"><span id="thereText"></span></div>
+      </div>
+    </div>
+    <p class="demo-caption">what you type here appears there, as text, not a video frame</p>
+
+    <p class="status">Coming soon.</p>
+
+    <form id="notifyForm">
+      <label for="email" class="visually-hidden">Email address</label>
+      <input type="email" id="email" placeholder="you@company.com" required>
+      <button type="submit">Notify me</button>
+    </form>
+    <p class="note" id="signupNote">Or write to <a href="mailto:hi@sentence-labs.com">hi@sentence-labs.com</a>.</p>
+
+    <footer>
+      <p>Sentence Labs Private Limited · <a href="https://sentence-labs.com">sentence-labs.com</a> · © 2026</p>
+    </footer>
+
+  </div>
+</body>
+</html>
+
+<style>
+  :root{
+    --ink: #111111;
+    --muted: #666666;
+    --line: #dddddd;
+    --paper: #fdfdfc;
+    --max: 620px;
+  }
+
+  *{ box-sizing: border-box; }
+
+  .visually-hidden{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  body{
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--ink); }
+  a:hover{ color: var(--muted); }
+
+  *:focus-visible{
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+  }
+
+  .wrap{
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 88px 24px 56px;
+    text-align: center;
+  }
+
+  .mark{
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 0 40px;
+  }
+
+  h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 20px;
+  }
+
+  .tagline{
+    font-size: 1.02rem;
+    color: var(--muted);
+    margin: 0 0 48px;
+  }
+
+  /* -- demo -- */
+
+  .demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 0 14px;
+  }
+
+  .frame{
+    background: #fff;
+    border: 1px solid var(--ink);
+    text-align: left;
+  }
+
+  .frame-label{
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .frame-content{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.82rem;
+    min-height: 1.3em;
+    white-space: nowrap;
+  }
+
+  .frame.laptop{
+    width: 220px;
+    padding: 16px 18px;
+  }
+
+  .frame.phone{
+    width: 120px;
+    border-radius: 14px;
+    padding: 18px 12px;
+  }
+
+  .cursor{
+    display: inline-block;
+    animation: blink 1s steps(2) infinite;
+  }
+
+  .sync-line{
+    width: 30px;
+    height: 1px;
+    border-top: 1px dashed var(--muted);
+  }
+
+  @keyframes blink{
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  .demo-caption{
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 0 56px;
+  }
+
+  /* -- status + form -- */
+
+  .status{
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+
+  #notifyForm{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+  }
+
+  #email{
+    flex: 1 1 220px;
+    max-width: 260px;
+    padding: 10px 12px;
+    font-size: 0.92rem;
+    font-family: inherit;
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    background: #fff;
+    color: var(--ink);
+  }
+
+  #email::placeholder{ color: #a8a8a8; }
+
+  button[type="submit"]{
+    padding: 10px 18px;
+    font-size: 0.92rem;
+    font-family: inherit;
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+    border-radius: 0;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover{
+    background: var(--muted);
+    border-color: var(--muted);
+  }
+
+  .note{
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0 0 64px;
+  }
+
+  footer{
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+
+  footer p{
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  @media (max-width: 480px){
+    .wrap{ padding-top: 64px; }
+    .demo{ gap: 10px; }
+    .frame.laptop{ width: 160px; padding: 12px 14px; }
+    .frame.phone{ width: 90px; padding: 14px 8px; }
+    .frame-content{ font-size: 0.72rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .cursor{ animation: none; }
+  }
+</style>
+
+<script is:inline>
+  (function(){
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hereEl = document.getElementById('hereText');
+    var thereEl = document.getElementById('thereText');
+    var phrases = [
+      "Q3 roadmap, page 4",
+      "next slide, please",
+      "any questions so far?"
+    ];
+
+    if (reduceMotion) {
+      hereEl.textContent = phrases[0];
+      thereEl.textContent = phrases[0];
+    } else {
+      var lag = 260;
+
+      function sleep(ms){
+        return new Promise(function(resolve){ setTimeout(resolve, ms); });
+      }
+
+      function typePhrase(phrase){
+        return new Promise(function(resolve){
+          var i = 0;
+          function step(){
+            if (i <= phrase.length) {
+              var slice = phrase.slice(0, i);
+              hereEl.textContent = slice;
+              setTimeout(function(){ thereEl.textContent = slice; }, lag);
+              i++;
+              setTimeout(step, 55);
+            } else {
+              resolve();
+            }
+          }
+          step();
+        });
+      }
+
+      function erase(){
+        return new Promise(function(resolve){
+          function step(){
+            var cur = hereEl.textContent;
+            if (cur.length > 0) {
+              hereEl.textContent = cur.slice(0, -1);
+              thereEl.textContent = cur.slice(0, -1);
+              setTimeout(step, 20);
+            } else {
+              resolve();
+            }
+          }
+          step();
+        });
+      }
+
+      (async function loop(){
+        while (true) {
+          for (var j = 0; j < phrases.length; j++) {
+            await typePhrase(phrases[j]);
+            await sleep(1300);
+            await erase();
+            await sleep(300);
+          }
+        }
+      })();
+    }
+
+    document.getElementById('notifyForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var email = document.getElementById('email').value.trim();
+      var subject = encodeURIComponent('Notify me about Present Tense');
+      var body = encodeURIComponent(
+        'Please notify me when Present Tense launches.\n\nMy email: ' + email
+      );
+      window.location.href = 'mailto:hi@sentence-labs.com?subject=' + subject + '&body=' + body;
+      document.getElementById('signupNote').textContent =
+        "Opening your email app — send it and we'll be in touch.";
+    });
+  })();
+</script>
